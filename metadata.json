@@ -1,0 +1,5 @@
+{
+  "name": "Social Hub Dashboard",
+  "description": "A unified dashboard to connect and interact with LinkedIn, X (Twitter), and TikTok accounts, built with React and Tailwind CSS. This application simulates the authentication and data fetching processes described in the provided backend code.",
+  "requestFramePermissions": []
+}
