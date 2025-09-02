@@ -1,5 +1,4 @@
 
-require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
@@ -11,7 +10,8 @@ const twitterAuth = require('./auth/twitter');
 const tiktokAuth = require('./auth/tiktok');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
+const BASE_URL = 'https://seu-app-github-dev.app.github.dev';
 
 // Middlewares
 app.use(cors());
@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Session middleware setup
 app.use(session({
-  secret: process.env.SESSION_SECRET || 'a_very_secret_key_change_me',
+  secret: 'uma_chave_super_secreta_e_complexa',
   resave: false,
   saveUninitialized: true,
   cookie: { 
@@ -84,7 +84,7 @@ app.listen(PORT, () => {
   console.log('='.repeat(60));
   console.log('🚀 Social Hub Backend Server');
   console.log('='.repeat(60));
-  console.log(`📍 Server running on: ${process.env.BASE_URL || `http://localhost:${PORT}`}`);
+  console.log(`📍 Server running on: ${BASE_URL || `http://localhost:${PORT}`}`);
   console.log('Ensure your .env file is configured with the correct BASE_URL and API credentials.');
   console.log('='.repeat(60));
 });

@@ -8,7 +8,9 @@ const router = express.Router();
 const apiRouter = express.Router();
 
 // --- CONFIGURATION ---
-const { TWITTER_CLIENT_ID, TWITTER_CLIENT_SECRET, BASE_URL } = process.env;
+const TWITTER_CLIENT_ID = 'T3VlYWFXWmhMVkY1N0FNSzctbVQ6MTpjaQ';
+const TWITTER_CLIENT_SECRET = 'aVshIh5nym9i9J-0rbNAt93OFmvDbgmKDhJQi5gZfYi4noE-XQ';
+const BASE_URL = 'https://seu-app-github-dev.app.github.dev';
 const REDIRECT_URI = `${BASE_URL}/auth/twitter/callback`;
 const SCOPE = ['tweet.read', 'users.read', 'offline.access'].join(' ');
 

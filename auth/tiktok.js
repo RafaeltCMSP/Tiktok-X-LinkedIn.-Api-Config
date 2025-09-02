@@ -8,7 +8,9 @@ const router = express.Router();
 const apiRouter = express.Router();
 
 // --- CONFIGURATION ---
-const { TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, BASE_URL } = process.env;
+const TIKTOK_CLIENT_KEY = 'sbaw2oubt38k6g1a7y';
+const TIKTOK_CLIENT_SECRET = 'f0hRBTxI8xLdr8UZ8vlZEZq8IsEASQkd';
+const BASE_URL = 'https://seu-app-github-dev.app.github.dev';
 const REDIRECT_URI = `${BASE_URL}/auth/tiktok/callback`;
 const SCOPE = 'user.info.basic,video.list';
 

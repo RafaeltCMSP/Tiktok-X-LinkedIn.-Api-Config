@@ -10,7 +10,9 @@ const router = express.Router();
 const apiRouter = express.Router();
 
 // --- CONFIGURATION ---
-const { LINKEDIN_CLIENT_ID, LINKEDIN_CLIENT_SECRET, BASE_URL } = process.env;
+const LINKEDIN_CLIENT_ID = '78jbo1yvmlx7oi';
+const LINKEDIN_CLIENT_SECRET = 'WPL_AP1.HGH1QkXop1S1h7Jq.Z0Sk6Q==';
+const BASE_URL = 'https://seu-app-github-dev.app.github.dev';
 const REDIRECT_URI = `${BASE_URL}/auth/linkedin/callback`;
 const SCOPES = 'openid profile email';
 
